@@ -41,10 +41,10 @@ export default function App () {
 
       <Switch>
         <Route path={'/movies/:movieId'}>
-          <Movie />
+          <Movie movies={movieList}/>
         </Route>
 
-        <Route exact path={'/'}>
+        <Route path={'/'}>
           <MovieList movies={movieList} />
         </Route>
       </Switch>
